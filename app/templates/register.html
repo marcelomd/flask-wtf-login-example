@@ -1,0 +1,14 @@
+<h1>REGISTER</h1>
+
+{% from "_util.html" import render_field %}
+<form id="loginForm" class="form form-register" method="POST" action="" role="form">
+    {{ form.hidden_tag() }}
+    {{ render_field(form.username, placeholder="Username") }}<br>
+    {{ render_field(form.email, placeholder="Email") }}<br>
+    {{ render_field(form.password, placeholder="Password") }}<br>
+    {{ render_field(form.confirm, placeholder="Password (again)") }}<br>
+    <p><input class="btn btn-default btn-submit" type="submit" value="Login"></p>
+</form>
+
+<a href="/">index</a><br>
+<a href="/login">login</a><br>
